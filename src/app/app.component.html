@@ -1,6 +1,21 @@
 <div class="container p-3">
   <div class="form-group">
-    <textarea name="" id="" cols="30" rows="10" [value]="newPost" class="form-control"></textarea>
-  <div class=""></div></div>
-  <button class="btn btn-primary mt-3" (click)="changePost()">Hello</button>
+    <textarea
+      name=""
+      #textArea
+      id=""
+      cols="30"
+      rows="10"
+      [value]="newPost"
+      class="form-control"
+    ></textarea>
+    <div class=""></div>
+  </div>
+  <button class="btn btn-primary mt-3" (click)="changePost(textArea.value)">
+    Hello
+  </button>
+  <div class="row m-2 border p-2">
+    <div class="col-12"></div>
+    {{ newPost }}
+  </div>
 </div>
