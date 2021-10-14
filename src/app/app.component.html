@@ -2,7 +2,7 @@
   <div class="form-group">
     <textarea
       name=""
-      #textArea
+      [(ngModel)]="enteredValue"
       id=""
       cols="30"
       rows="10"
@@ -11,7 +11,7 @@
     ></textarea>
     <div class=""></div>
   </div>
-  <button class="btn btn-primary mt-3" (click)="changePost(textArea.value)">
+  <button class="btn btn-primary mt-3" (click)="changePost()">
     Hello
   </button>
   <div class="row m-2 border p-2">

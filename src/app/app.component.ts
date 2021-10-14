@@ -7,8 +7,8 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   newPost = 'Testing'
-
-  changePost(value) {
-    this.newPost = value
+  enteredValue = '';
+  changePost() {
+    this.newPost = this.enteredValue;
   }
 }
