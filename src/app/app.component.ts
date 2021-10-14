@@ -6,8 +6,11 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  newPost = 'Testing'
+  
+  newPost = 'Testing';
+
   enteredValue = '';
+
   changePost() {
     this.newPost = this.enteredValue;
   }
